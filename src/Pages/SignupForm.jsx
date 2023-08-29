@@ -21,7 +21,7 @@ const SignupForm = () => {
           </div>
           <div>
             <InputField
-              style="w-full h-[55px] p-4 my-2 pl-5 font-medium text-xs lg:text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              style="w-full h-[55px] p-4 my-2 pl-5 font-medium text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
               name="password"
               type="password"
               placeholder="Password"
