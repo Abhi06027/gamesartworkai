@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="w-full h-[80px] sm:px-8 px-4 py-2 border-b flex justify-between fixed top-0 bottom-0 lg:static z-[99] bg-gradient-to-r from-[#10112a] via-[#1b0d22] to-[#0c1e3c] border-b-[#243449]">
-      <nav className="flex gap-4 items-center">
+      <nav className="flex gap-3 items-center">
         <div
           onClick={() => setOpen(!open)}
           className={`z-[999] lg:hidden ${open ? "text-black" : "text-white"} `}
