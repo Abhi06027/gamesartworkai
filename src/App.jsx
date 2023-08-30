@@ -1,5 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Howitworks, AboutUs, ArtworkGallery, SignupForm } from "./Pages";
+import {
+  Howitworks,
+  AboutUs,
+  ArtworkGallery,
+  SignupForm,
+  Create,
+} from "./Pages";
 import { Header, Hero, Footer, Hidenavbarfooter } from "./Components";
 
 function App() {
@@ -15,6 +21,7 @@ function App() {
           <Route path="/artwork-gallery" element={<ArtworkGallery />} />
           <Route path="/" element={<AboutUs />} />
           <Route path="/Sign-in" element={<SignupForm />} />
+          <Route path="/create" element={<Create />} />
         </Routes>
 
         <Hidenavbarfooter>

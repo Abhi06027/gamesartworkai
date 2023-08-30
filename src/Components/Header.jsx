@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="w-full h-[80px] sm:px-8 px-4 py-2 border-b flex justify-between fixed top-0 bottom-0 lg:static z-[99] bg-gradient-to-r from-[#10112a] via-[#1b0d22] to-[#0c1e3c] border-b-[#243449]">
-      <nav className="flex items-center">
+      <nav className="flex gap-4 items-center">
         <div
           onClick={() => setOpen(!open)}
           className={`z-[999] lg:hidden ${open ? "text-black" : "text-white"} `}
@@ -39,7 +39,7 @@ const Header = () => {
         </div>
 
         <Link to="/" className="flex items-center">
-          <Logo style="w-[70px] h-[70px] object-contain" />
+          <Logo style="w-[70px] h-[70px] hidden lg:block object-contain" />
           <h2 className="font-bold text-white text-[24px]">GAG</h2>
         </Link>
       </nav>
@@ -56,7 +56,14 @@ const Header = () => {
           ))}
         </ul>
       </div>
-      <div className="flex items-center">
+      <div className="flex space-x-2 items-center">
+        <Link to="create">
+          <Button
+            name={"Create"}
+            style="bg-gradient-to-r from-[#2f96fb] shadow-lg font-medium text-white to-[#b241ff] px-4 py-2 rounded-md"
+          />
+        </Link>
+
         <Link to="Sign-in">
           <Button
             name={"Sign In"}

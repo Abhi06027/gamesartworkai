@@ -19,7 +19,7 @@ const Footer = () => {
                     <img
                       className="w-5 h-5"
                       src={social.url}
-                      alt={social.url}
+                      alt={social.logo}
                     />
                   </div>
                 </Link>
