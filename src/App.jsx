@@ -6,7 +6,8 @@ import {
   SignupForm,
   Create,
 } from "./Pages";
-import { Header, Hero, Footer, Hidenavbarfooter } from "./Components";
+import { Hero, Hidenavbarfooter } from "./Components";
+import { SlidingCarousel } from "./Components/slidingCarousel";
 
 function App() {
   return (

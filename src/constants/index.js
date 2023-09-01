@@ -12,6 +12,11 @@ import {
   ten,
   eleventh,
   twelve,
+  nextjs,
+  reactjs,
+  html,
+  java,
+  css,
 } from "../assets";
 
 export const NavlinksData = [
@@ -123,5 +128,29 @@ export const Aspect = [
   },
   {
     aspect: "3:3",
+  },
+];
+
+export const Onslides = [
+  {
+    url: nextjs,
+    alt: "img 1",
+  },
+
+  {
+    url: reactjs,
+    alt: "img 2",
+  },
+  {
+    url: html,
+    alt: "img 3",
+  },
+  {
+    url: java,
+    alt: "img 4",
+  },
+  {
+    url: css,
+    alt: "img 5",
   },
 ];

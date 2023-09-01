@@ -1,6 +1,7 @@
 import Aiartgallary from "./Aiartgallary";
 import Button from "./Button";
 import InputField from "./InputField";
+import { SlidingCarousel } from "./slidingCarousel";
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
         </div>
         <Aiartgallary />
       </div>
+      <SlidingCarousel />
     </div>
   );
 };

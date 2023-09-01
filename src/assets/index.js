@@ -14,6 +14,11 @@ import Googlelogo from "./Googlelogo.png";
 import applelogo from "./applelogo.png";
 import logoblue from "./logoblue.png";
 import preview from "./preview.png";
+import nextjs from "./nextjs.jpg";
+import reactjs from "./react.jpg";
+import html from "./html.jpg";
+import java from "./java.jpg";
+import css from "./css.jpg";
 export {
   witcher3,
   dark,
@@ -31,4 +36,9 @@ export {
   applelogo,
   logoblue,
   preview,
+  nextjs,
+  reactjs,
+  html,
+  java,
+  css,
 };
