@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 const InputField = ({ style, type, placeholder }) => {
   return (
     <form>

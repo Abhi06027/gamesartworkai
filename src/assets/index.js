@@ -13,7 +13,7 @@ import twelve from "./twelve.jpg";
 import Googlelogo from "./Googlelogo.png";
 import applelogo from "./applelogo.png";
 import logoblue from "./logoblue.png";
-
+import preview from "./preview.png";
 export {
   witcher3,
   dark,
@@ -30,4 +30,5 @@ export {
   Googlelogo,
   applelogo,
   logoblue,
+  preview,
 };

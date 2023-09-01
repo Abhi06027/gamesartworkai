@@ -4,5 +4,6 @@ import instagram from "./instagram.svg";
 import twitter from "./twitter.svg";
 import linkedin from "./linkedin.svg";
 import logo from "./logo.svg";
+import accordin from "./accordin.svg";
 
-export { facebook, hamburger, instagram, linkedin, twitter, logo };
+export { facebook, hamburger, instagram, linkedin, twitter, logo, accordin };

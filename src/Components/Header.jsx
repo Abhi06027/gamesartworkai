@@ -59,6 +59,7 @@ const Header = () => {
       <div className="flex space-x-2 items-center">
         <Link to="create">
           <Button
+            type="submit"
             name={"Create"}
             style="bg-gradient-to-r from-[#2f96fb] shadow-lg font-medium text-white to-[#b241ff] px-4 py-2 rounded-md"
           />
@@ -66,6 +67,7 @@ const Header = () => {
 
         <Link to="Sign-in">
           <Button
+            type="submit"
             name={"Sign In"}
             style="bg-gradient-to-r from-[#2f96fb] shadow-lg font-medium text-white to-[#b241ff] px-4 py-2 rounded-md"
           />

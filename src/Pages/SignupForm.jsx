@@ -6,11 +6,11 @@ import Button from "../Components/Button";
 const SignupForm = () => {
   return (
     <div className="bg-white w-full">
-      <Link to="/" className=" p-2 flex items-center">
+      <Link to="/" className=" absolute z-[999] p-2 flex items-center">
         <LogoBlue style="w-[70px] h-[70px] object-contain" />
         <h2 className="font-bold text-[#130f27] text-[24px]">GAG</h2>
       </Link>
-      <div className="bg-white flex h-screen md:justify-center md:items-center">
+      <div className="bg-white flex h-screen md:justify-center pt-20 md:items-center">
         <div className=" bg-white md:shadow-md lg:border mx-auto rounded-lg md:px-8 py-6">
           <div className="flex justify-center items-center">
             <LogoBlue style="w-[55px] h-[55px] object-contain" />

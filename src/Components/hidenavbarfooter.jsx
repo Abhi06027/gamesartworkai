@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import Footer from "./Footer";
+import Header from "./Header";
+
 const Hidenavbarfooter = ({ children }) => {
   const location = useLocation();
-  const [showNavBar, setShowNavBar] = useState(false);
+  const [showNavbarFooter, setShowNavBar] = useState(false);
   useEffect(() => {
-    if (location.pathname === "/Sign-in") {
-      setShowNavBar(false);
-    } else {
-      setShowNavBar(true);
-    }
+    const excludedPaths = ["/Sign-in", "/create"];
+    setShowNavBar(!excludedPaths.includes(location.pathname));
   }, [location]);
-  return <div> {showNavBar && children} </div>;
+  return (
+    <div>
+      {showNavbarFooter && <Header />}
+      {children}
+      {showNavbarFooter && <Footer />}
+    </div>
+  );
 };
+
 export default Hidenavbarfooter;

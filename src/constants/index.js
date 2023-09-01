@@ -108,3 +108,20 @@ export const socials = [
     link: "/",
   },
 ];
+export const Aspect = [
+  {
+    aspect: "1:1",
+  },
+  {
+    aspect: "9:16",
+  },
+  {
+    aspect: "16:9",
+  },
+  {
+    aspect: "4:3",
+  },
+  {
+    aspect: "3:3",
+  },
+];
