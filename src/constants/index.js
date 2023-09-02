@@ -37,6 +37,10 @@ export const NavlinksData = [
     name: "About Us",
     link: "/",
   },
+  {
+    name: "News",
+    link: "/news",
+  },
 ];
 
 export const aiartgallary = [

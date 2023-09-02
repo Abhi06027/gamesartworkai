@@ -7,7 +7,7 @@ import {
   Create,
 } from "./Pages";
 import { Hero, Hidenavbarfooter } from "./Components";
-import { SlidingCarousel } from "./Components/slidingCarousel";
+import Movies from "./Pages/Movies";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
             <Route path="/" element={<AboutUs />} />
             <Route path="/Sign-in" element={<SignupForm />} />
             <Route path="/create" element={<Create />} />
+            <Route path="/news" element={<Movies />} />
           </Routes>
         </Hidenavbarfooter>
       </main>
