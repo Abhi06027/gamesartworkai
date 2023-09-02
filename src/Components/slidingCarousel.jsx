@@ -26,24 +26,18 @@ export const SlidingCarousel = ({
     return () => clearInterval(slideInterval);
   }, []);
   return (
-    <div className=" max-w-[600px] h-[500px] md:max-w-[750px] md:h-[800px] lg:max-w-[1400px] lg:h-[1000px] p-8 w-full m-auto py-12 px-4 relative group">
+    <div className=" max-w-[350px] h-[350px] md:max-w-[700px] md:h-[800px] lg:max-w-[1350px] lg:h-[1000px] p-8 w-full m-auto md:mt-5 px-4 relative group">
       <div
         style={{ backgroundImage: `url(${Onslides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl  first-letter:bg-center bg-cover duration-500"
       ></div>
 
       <div className=" absolute top-[50%] -translate-x-0 translate-y-[-50%] left-8 text-2xl rounded-full p-2  bg-black/20 text-white cursor-pointer">
-        <IoIosArrowBack
-          className=" text-sm md:text-[30px] "
-          onClick={prevSlide}
-        />
+        <IoIosArrowBack className="  text-[30px] " onClick={prevSlide} />
       </div>
 
       <div className="absolute top-[50%]  -translate-x-0 translate-y-[-50%] right-8 text-2xl rounded-full p-2  bg-black/20 text-white cursor-pointer">
-        <IoIosArrowForward
-          className="text-sm md:text-[30px]"
-          onClick={nextSlide}
-        />
+        <IoIosArrowForward className="text-[30px]" onClick={nextSlide} />
       </div>
 
       <div className="flex top-4 justify-center py-2">

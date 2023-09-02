@@ -18,6 +18,12 @@ const Movies = () => {
 
     getUsers();
   }, []);
+  function handleNextClick(e) {
+    console.log("Next");
+  }
+  function handlePreviousClick(e) {
+    console.log("Previous");
+  }
 
   const responsive = {
     desktop: {
@@ -71,6 +77,23 @@ const Movies = () => {
         })}
       </Carousel>
       ;
+      <div className="flex justify-around my-5">
+        <button
+          className="text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+          disabled
+          onClick={handlePreviousClick}
+        >
+          &larr; Previous
+        </button>
+
+        <button
+          type="button"
+          className="bg-blue-600 rounded-md text-white  px-4 hover:bg-blue-700"
+          onClick={handleNextClick}
+        >
+          Next &rarr;
+        </button>
+      </div>
     </div>
   );
 };
