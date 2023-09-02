@@ -29,7 +29,7 @@ const Header = () => {
         </div>
         <div
           className={`fixed lg:hidden flex justify-center text-center items-center text-white z-50 w-full h-full
-          font-medium text-xl bg-black opacity-70 top-0 duration-300 ${
+          font-medium text-xl bg-black opacity-90 top-0 duration-300 ${
             open ? "left-0" : "left-[-100%]"
           }`}
         >
