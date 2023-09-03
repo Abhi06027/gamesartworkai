@@ -1,8 +1,7 @@
 import Aiartgallary from "./Aiartgallary";
 import Button from "./Button";
 import InputField from "./InputField";
-import { SlidingCarousel } from "./slidingCarousel";
-
+import SlidingCarousel from "./slidingCarousel";
 const Home = () => {
   return (
     <div>
@@ -25,6 +24,7 @@ const Home = () => {
             placeholder="Generate Your Games Artwork"
           />
           <Button
+            type="submit"
             name="Generate"
             style="text-white absolute right-2.5 bottom-2 bg-gradient-to-r from-[#2f96fb] shadow-lg font-medium text-white to-[#b241ff] px-4 py-2 rounded-md"
           ></Button>

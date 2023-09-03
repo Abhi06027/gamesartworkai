@@ -9,3 +9,11 @@
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+}
+
+/* .swiper-pagination-bullet {
+  background-color: #000000;
+} */

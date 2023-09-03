@@ -56,7 +56,7 @@ const Movies = () => {
         News-Top Headlines
       </h1>
       <Carousel
-        className=" pb-12 "
+        className=" md:pb-12 "
         autoPlaySpeed={5000}
         transitionDuration={500}
         showDots={true}
