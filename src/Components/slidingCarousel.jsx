@@ -1,13 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import require module
+import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-// import require module
 
-// import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-// import { RxDotFilled } from "react-icons/rx";
 import { Onslides } from "../constants";
 
 const SlidingCarousel = () => {
@@ -21,19 +17,35 @@ const SlidingCarousel = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        navigation={{
+          nextEl: ".button-next-slide",
+          prevEl: ".button-next-prev",
+        }}
         pagination={{
+          el: ".swiper-custom-pagination",
           clickable: true,
         }}
         loop={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper text-black rounded-md  w-[300px]  md:w-[650px] md:h-[400px] lg:w-[950px] lg:h-[600px] xl:w-[1300px] xl:h-[800px]   m-auto mt-4 md:mt-10  relative"
+        className="w-[300px] rounded-lg md:w-[650px] lg:w-[950px] xl:w-[1300px]
+        m-auto mt-4 md:mt-10 "
       >
         {Onslides.map((slide) => (
-          <SwiperSlide key={slide.url}>
-            <img src={slide.url} alt={slide.url} />
+          <SwiperSlide className="" key={slide.url}>
+            <img className="" src={slide.url} alt={slide.url} />
+            <div className="swiper-pagination"></div>
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className=" flex justify-center items-center lg:mt-4 space-x-4">
+        <div className="button-next-prev hidden lg:block cursor-pointer w-20 p-2 text-center text-white bg-blue-600 rounded-md border-none outline-none shadow-md">
+          Prev
+        </div>
+        <div className="button-next-slide hidden lg:block cursor-pointer w-20 p-2 text-center text-white bg-blue-600 rounded-md border-none outline-none shadow-md ">
+          Next
+        </div>
+      </div>
+      <div className="swiper-custom-pagination flex justify-center items-center space-x-2 mt-4 " />
     </div>
   );
 };
