@@ -25,7 +25,7 @@ const Gototop = () => {
     <div>
       {isVisible && (
         <div
-          className="fixed z-[999] bottom-20 flex justify-center items-center cursor-pointer right-5 bg-white rounded-full w-[3rem] h-[3rem] text-white  bg-gradient-to-r from-[#2f96fb] shadow-lg font-medium te to-[#b241ff]  "
+          className="fixed z-[999] bottom-20  md:bottom-24 flex justify-center items-center cursor-pointer right-5 bg-white rounded-full w-[3rem] h-[3rem] text-white  bg-gradient-to-r from-[#2f96fb] shadow-lg font-medium te to-[#b241ff]  "
           onClick={goToBtn}
         >
           <FaArrowUp size={15} className="icon" />
