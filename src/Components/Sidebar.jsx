@@ -4,9 +4,10 @@ import { IoIosArrowForward } from "react-icons/io";
 import { Aspect } from "../constants";
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [active, setActive] = useState(false);
+
+  const [isClicked, setIsClicked] = useState(false);
   const handleClick = () => {
-    setActive(!active);
+    setIsClicked(!isClicked);
   };
 
   const toggleAccordion = () => {
@@ -32,13 +33,16 @@ const Sidebar = () => {
       </button>
       {isOpen && (
         <div>
-          <ul className="flex items-center flex-wrap mt-3 gap-2">
-            {Aspect.map((ratio) => (
+          <ul className="flex items-center flex-wrap mt-3 gap-3">
+            {Aspect.map((ratio, index) => (
               <li key={ratio.id}>
                 <button
                   onClick={handleClick}
-                  style={{ backgroundColor: active ? "#d5d5f9" : "white" }}
-                  className="text-black text-sm p-1 text-center w-10 h-8 border-2 border-purple-600  rounded-xl cursor-pointer"
+                  className={`text-black text-sm p-1 text-center w-10 h-8 rounded-xl ${
+                    isClicked == index
+                      ? "bg-purple-400 text-white border-black border-2"
+                      : "bg-gray-300"
+                  }`}
                 >
                   {ratio.aspect}
                 </button>

@@ -119,18 +119,23 @@ export const socials = [
 ];
 export const Aspect = [
   {
+    id: 1,
     aspect: "1:1",
   },
   {
+    id: 2,
     aspect: "9:16",
   },
   {
+    id: 3,
     aspect: "16:9",
   },
   {
+    id: 4,
     aspect: "4:3",
   },
   {
+    id: 5,
     aspect: "3:3",
   },
 ];

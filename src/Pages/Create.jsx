@@ -11,7 +11,7 @@ const Create = () => {
       <div>
         <Sidebar />
       </div>
-      <div className=" bg-[#f6f6f6] flex flex-col justify-center  h-screen">
+      <div className=" bg-[#f6f6f6] flex flex-col justify-center h-screen">
         <div className="flex justify-center items-center ">
           <img
             className="text-lg w-80 lg:w-96 text-black "

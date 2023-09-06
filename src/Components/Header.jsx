@@ -1,19 +1,37 @@
 import { useState } from "react";
 import { NavlinksData } from "../constants";
 import { Link } from "react-router-dom";
+
 import Button from "./Button";
 import Logo from "./Logo";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
+const CustomLinks = ({ to, title }) => {
+  return (
+    <Link to={to} className={"relative hidden lg:block group"}>
+      {title}
+      <span
+        className={
+          "h-[1px] w-0 inline-block absolute bg-white left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-300"
+        }
+      >
+        &nbsp;
+      </span>
+    </Link>
+  );
+};
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const handleNav = () => {
+    setOpen(!open);
     if (!open) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "scroll";
     }
   };
+
   return (
     <header className="w-full h-[80px] sm:px-8 px-4 py-2 border-b flex justify-between fixed top-0 bottom-0 lg:static z-[99] bg-gradient-to-r from-[#10112a] via-[#1b0d22] to-[#0c1e3c] border-b-[#243449]">
       <nav className="flex gap-3 items-center">
@@ -53,11 +71,7 @@ const Header = () => {
         <ul className="flex text-white text-lg font-medium space-x-3">
           {NavlinksData.map((item) => (
             <li key={item.name}>
-              <Link to={item.link}>
-                <p className="hidden hover:text-gray-300  lg:block">
-                  {item.name}
-                </p>
-              </Link>
+              <CustomLinks to={item.link} title={item.name} />
             </li>
           ))}
         </ul>
