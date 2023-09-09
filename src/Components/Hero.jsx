@@ -4,8 +4,8 @@ import InputField from "./InputField";
 import SlidingCarousel from "./slidingCarousel";
 const Home = () => {
   return (
-    <div>
-      <div className="flex flex-col justify-center text-white text-center pt-32">
+    <div className="">
+      <div className="flex flex-col justify-center text-white text-center mt-14 lg:mt-28">
         <h1 className="px-2 font-semibold text-7xl lg:text-[100px] md:text-[60px] sm:text-[50px] text-[30px] lg:leading-[110px] md:leading-[80px] sm:leading-[60px] leading-[40px]">
           Create Stunning
           <br />
